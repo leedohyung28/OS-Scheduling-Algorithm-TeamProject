@@ -2,6 +2,7 @@
 
 한국기술교육대학교 운영체제 (process scheduling) 팀프로젝트 
 
+<br><br>
 
 ## 👋🏻 프로젝트 소개 
 
@@ -13,7 +14,7 @@ Process Scheduling은 Muti-core Processor로 이루어져, P core와 E core를 �
 
 코드로 구현된 Process Scheduling algorithm을 Visualization하여 Process Scheduling을 보기 쉽게 한다.
 
-
+<br><br>
 
 ## 💻 개발 환경 
 
@@ -23,11 +24,14 @@ Process Scheduling은 Muti-core Processor로 이루어져, P core와 E core를 �
 `front end`
 - `python tkinter`
 
+<br><br>
 
 ## 개발 기간 ⏰
 ####
 
 - 2021.05.01 ~ 2021.06.05
+
+<br><br>
 
 ## 주요 기능 🏅
 ####
