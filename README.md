@@ -5,14 +5,17 @@
 
 ## 👋🏻 프로젝트 소개 
 
-Process Scheduling Simulator 프로젝트는 Basic five scheduling algorithms과 Your own algorithm을 구현하여 Process Scheduling을 동작한다.
+Process Scheduling Simulator 프로젝트는 Basic five scheduling algorithms과 Your own algorithm을 
+
+구현하여 Process Scheduling을 동작한다.
 
 Process Scheduling은 Muti-core Processor로 이루어져, P core와 E core를 각 사용자에 맞추어 사용할 수 있다. 
 
 코드로 구현된 Process Scheduling algorithm을 Visualization하여 Process Scheduling을 보기 쉽게 한다.
 
 
-### 💻 개발 환경 
+
+## 💻 개발 환경 
 
 `Back end`
 - `Python`
