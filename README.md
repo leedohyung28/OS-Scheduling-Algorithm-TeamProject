@@ -16,6 +16,7 @@ Process Scheduling은 Muti-core Processor로 이루어져, P core와 E core를 �
 
 `Back end`
 - `Python`
+
 `front end`
 - `python tkinter`
 
