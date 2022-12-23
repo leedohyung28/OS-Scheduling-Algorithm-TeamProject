@@ -2,7 +2,25 @@
 
 한국기술교육대학교 운영체제 (process scheduling) 팀프로젝트 
 
+<br>
+
+## Usage 👨🏻‍🔧
+
+---
+
+1. Choice Sceduling algorithm 🤔
+2. ADD Process 🪵
+3. ADD Core 🔥
+4. Run 🚀
+
+
+<br>
+
+
+
 ## 💻 개발 환경 
+
+---
 
 `Back end`
 - `Python`
@@ -10,39 +28,38 @@
 `front end`
 - `python tkinter`
 
-<br><br>
+<br>
 
 ## 개발 기간 ⏰
-####
+---
 
-- 2022.03.24 ~ 2022.05.08
+- **2022.03.24 ~ 2022.05.08 ( 총: 46일 )** 
 
-<img src="https://user-images.githubusercontent.com/91319157/209250019-99c7ec9e-d074-4230-9ac4-522ef864b760.png">
-
+<img src="https://user-images.githubusercontent.com/91319157/209250019-99c7ec9e-d074-4230-9ac4-522ef864b760.png" width="97%">
 
 <br><br>
 
 ## 👋🏻 프로젝트 소개 
+---
+<br>
+Process Scheduling Simulator 프로젝트는 Basic five scheduling algorithms과 Your own algorithm을 구현하여 Process Scheduling을 동작한다.
 
-<br><br><br><br><br>
-
-Process Scheduling Simulator 프로젝트는 Basic five scheduling algorithms과 Your own algorithm을 
-
-구현하여 Process Scheduling을 동작한다.
+<br>
 
 Process Scheduling은 Muti-core Processor로 이루어져, P core와 E core를 각 사용자에 맞추어 사용할 수 있다. 
 
+<br>
+
 코드로 구현된 Process Scheduling algorithm을 Visualization하여 Process Scheduling을 보기 쉽게 한다.
+***
 
 <br><br>
 
-***
-
 Basic five scheduling algorithms은 FCFS, 
-
 RR(Time quantum = δ), SPN, SRTN, HRRN으로 구성 돼있다. 
+<br><br>
 
-### Basic five scheduling algorithms
+## • Basic five scheduling algorithms
 | Basic scheduling algorithms | Preemptive |  Criteria |
 | :---:  | :---: | :---: |
 | FCFS(First-Come-First-Service) |  X | Arrival Time |
@@ -55,21 +72,27 @@ RR(Time quantum = δ), SPN, SRTN, HRRN으로 구성 돼있다.
 
 <br><br><br>
 
-### input & output
-
-<br> 
+## input & output
+---
+<br>
 
 Process Scheduling은 사용자로부터 최대 15개의 Process, 최대 4개의 processor, Arrival time
 
+<br>
+
 for each process, Burst time for each process, Time quantum을 입력 받는다. 또 각 scheduling
+
+<br>
 
 기법 별로 Gantt chart, WT(Waiting Time) for each process, TT(Turnaround Time) for each 
 
+<br>
+
 process, NTT(Normalized Turnaround Time) for each process, 소비전력을 출력한다.
 
-<br><br>
+<br>
 
-### System properties
+### • System properties
 | Core   | 성능  |  전력 | 대기 전력 |
 | :---:  | :---: | :---: | :---: |
 | E |  1초에 1의 일을 처리 | 1W | 0.1W |
@@ -80,107 +103,102 @@ process, NTT(Normalized Turnaround Time) for each process, 소비전력을 출�
 <br>
 <br>
 
-Scheduling은 1초 단위로 이루어지고, P core에 할당된 작업의 남은 일의 양이 1이어도,
-
-1초를 소모한다고 가정한다.
+Scheduling은 1초 단위로 이루어지고, P core에 할당된 작업의 남은 일의 양이 1이어도,1초를 소모한다고 가정한다.
 
 
 <br><br>
 
 ## 알고리즘 도식화
 
-####
+<img src="https://user-images.githubusercontent.com/91319157/209252941-09b42e0e-1670-4466-9752-3c4e98dc467b.png" width="95%">
+
+[그림02. 알고리즘 도식화]
+
+<br><br><br>
+
+## WTQ(waiting Time Quantum)_New algorithm
+---
+
+<br>
+
+## 아이디어 제시 
+<br>
+SPN에서 Burst time이 작은 순서대로 작업을 진행하기 때문에 계속해서 Burst Time이 작은 Process가 ready_queue에 들어오게 된다면, 
+
+Burst Time이 큰 Process는 계속해서 뒤로 밀리게 되어 아무리 일찍 Process에 들어오게 되더라도 반환 시간이 늦어지게 된다. 이 문제를 
+
+해결하려고 한다. 따라서 waiting_time_quantum을 추가하였다. 이는 최소 대기 시간이다. 최소 대기 시간이 지나면 우선 순위로 지정하여 작업을 시작한다.
 
 
-### 메인 홈페이지 gif 
+이번 프로젝트의 방향성은 사용자의 편의성을 최우선으로 고려한다. 따라서, waiting_time_quantum의 값을 사용자가 지정할 수 있다. 만약 
 
-<img src="https://user-images.githubusercontent.com/91319157/208422512-67f748aa-7a7a-4071-ad80-16edfb27c486.gif" width="65%">
+waiting_time_quantum을 작게 설정한다면 Arrival Time이 우선순위가 되므로 FCFS와 같은 역할을 수행할 수 있고, waiting_time_quantum을 
 
-### 기능
-- 상단 애니메이션 배너
-- 최근 상품(DB 저장 기준) 대표 3가지만 전시 
-- 대학교 과 별 커뮤니티 선택 요소
-- IFrame 태그를 이용한 한국기술교육대학교 날씨와 학식 정보 
+크게 설정한다면, SPN과 같은 역할을 수행한다. 따라서 SPN에서 생기는 무한대기 현상을 해결해 줄 수 있으며, 사용자가 원하는 방향에 따라서 알고리즘 기법을 택할 수 있다. 
+
+<br><br>
+
+## 핵심 데이터 구조
+---
+
+- ready_queue_waiting_time (리스트)
+- waiting_time_quantum 
+
+<br>
+
+ ready_queue_waiting_time은 ready_queue에 Process가 있을 경우에 1초 당 1씩 증가시킨다. 따라서 설정해준 waiting_time_quantum보다 ready_queue_waiting_time의 원소 중 하나가 같거나 커지게 되면, 즉 기다리고 있는 Process가 waiting_time_quantum을 경과하면, 해당 Process를 먼저 처리한다
+
+<br>
+
+<img src="https://user-images.githubusercontent.com/91319157/209253296-ac8cb691-937e-42ef-96d3-9b758c9c5667.png" width="50%">
+
+[그림15. ready_queue_waiting_time]
+
+<br>
+
+### WTQ 구현 방법
+
+<br>
+
+- 이 알고리즘은 기본적으로 SPN을 계승한 알고리즘이다. 따라서, 기본 틀은 SPN과 같다. SPN과 같이 process_number_and_burst_time을 사용하여 Burst Time을 오름차순으로 정렬하여 작은 Burst Time을 가진 process부터 작업을 진행한다. 
+
+<br>
+
+<img src="https://user-images.githubusercontent.com/91319157/209253541-a6cfb9dc-09f9-4bdb-92b2-e09b9d23cefb.png">
+
+[도식화06. Flow chart]
+
+<br>
+
+먼저, ready_queue_waiting_time으로 설정된 기다리는 시간이 얼마나 되었는지 확인한다. 
+
+<br>
+
+<img src="https://user-images.githubusercontent.com/91319157/209254558-c859261f-04e0-4d2a-b043-67dd6d86dd6b.png" width="90%">
+
+[그림16. WTQ]
+
+<br>
+
+waiting_time_quantum만큼 기다리는 Process가 있다면, ready_queue 맨 앞에 넣어 우선적으로 실행한다. [그림16]처럼 P1은 먼저 왔지만, Burst Time이 오름차순으로 정렬되어 제일 늦게 실행된다. 만약, P1이 사용자가 설정한 waiting_time_quantum 이상 기다렸다면, ready_queue 맨 앞에 삽입한다.
+
+<br><br>
 
 
-## 상품 View 페이지
+## GUI Overview ✅
+---
+<br>
 
-<img src="https://user-images.githubusercontent.com/91319157/208429052-58ff0703-99c2-4c9a-9080-453f89797e81.png" width="50%">
-
-### 기능
-- 카테고리 별 물품 조회 기능 
-### DB Table
-| Num | category |  subject | content | name | regist_day | hit | id | price | file |
-| :---:  | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | 
-| PK  |  상품 카테고리 | 제목 | 판매글 | 이름 | 등록날짜 | 조회수 | 닉네임 | 가격 | 파일정보 | 
-
-데이터베이스에 저장된 카테고리를 이용해 각각의 조회 페이지를 만들어 SQL을 다르게 하여 조회하였다. 
-
-- 수정 (DB sql) 
-- 삭제 (DB sql) 
-- 글 작성 (DB sql)
-
-> 각각 php에서 세션을 통해서 값을 전달하여 전달받은 데이터를 DB sql문을 통해서 저장
+<img src="https://user-images.githubusercontent.com/91319157/209257960-91a665ee-bd8e-4d8b-a0c1-c5e11272ae6c.png">
 
 
-
-
-## 개발자 페이지 
-
-<img src="https://user-images.githubusercontent.com/91319157/208431126-c997bb8d-b8ef-41c8-aa04-ecf7cd1c955b.png" height="20%">
-
-if문을 통해서 저장된 맴버 admin으로 접속 시 숨겨진(hidden) 관리자 모드 제공
-
-### 기능
-- 배너 수정 & 삭제
-- 회원 관리(탈퇴 = 삭제) 
-- 모든 게시글 삭제 권한
-
-<img src="https://user-images.githubusercontent.com/91319157/208431687-ee09de01-9ebd-4640-b101-a70d1267a403.png" width="40%">
-
-
-## 그외
-
-- javascript를 이용한 로그인 확인 검사 (로그인 후 글쓰기) 
-- 게시글 작성 후 포인트 부여 ( 회원 마다 포인트 DB +100) 
-- 상품 개수 9개 이상 페이지 다음 이전 버튼 
-- 쪽지 송신 수신 기능 
 <br>
 <br>
 <br>
-<br>
-<br>
 
 
 
 
-
-## 개발 후기 🤔
-
-컴퓨터공학부 2학년 웹프로그래밍 수업에서 배운 것을 토대로 제작했습니다. 
-
-
-
-제가 이 과목을 들으면서 가장 좋았던 점은 정말 아무것도 없는 백지에다가 내가 원하는 무엇이든지 나만의 세상을 만들 수 있다는 점이었습니다.
-
-
-상상력을 마음 껏 표출할 수 있었고 제한이 없었기 때문입니다. 저의 색을 마음 껏 칠할 수 있어
-더욱 흥미롭게 진행 할 수 있었던 것 같습니다. 
-
-html & css 에서 제가 반영한 수정사항이 바로바로 눈에 확인 할 수 있었던 것이 
-공부를 하는 데 많이 도움이 되었습니다. 
-
-
-제 프로젝트에 부족한 부분이 많습니다. 
-하지만 앞으로 더욱 발전해가며 이 프로젝트를 보며 참 귀여웠다는 생각이 들 수 있는 날이 
-올 때까지 더욱 노력하겠습니다.
-
-
-### 부족한 부분
-- 코드 정리
-- 중복 코드 관리
-- 주석 부족
-- 회원 닉네임이 매우 길 경우 메뉴와 겹치는 현상
 
 
 <br>
