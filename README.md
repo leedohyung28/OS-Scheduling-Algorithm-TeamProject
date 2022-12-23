@@ -74,6 +74,7 @@ process, NTT(Normalized Turnaround Time) for each process, 소비전력을 출�
 | :---:  | :---: | :---: | :---: |
 | E |  1초에 1의 일을 처리 | 1W | 0.1W |
 | P |  1초에 2의 일을 처리 | 3W | 0.1W |
+
 [표02. System properties]
 
 <br>
