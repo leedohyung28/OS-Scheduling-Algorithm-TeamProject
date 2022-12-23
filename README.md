@@ -57,6 +57,8 @@ RR(Time quantum = δ), SPN, SRTN, HRRN으로 구성 돼있다.
 
 ### input & output
 
+<br> 
+
 Process Scheduling은 사용자로부터 최대 15개의 Process, 최대 4개의 processor, Arrival time
 
 for each process, Burst time for each process, Time quantum을 입력 받는다. 또 각 scheduling
@@ -65,6 +67,7 @@ for each process, Burst time for each process, Time quantum을 입력 받는다.
 
 process, NTT(Normalized Turnaround Time) for each process, 소비전력을 출력한다.
 
+<br><br>
 
 ### System properties
 | Core   | 성능  |  전력 | 대기 전력 |
