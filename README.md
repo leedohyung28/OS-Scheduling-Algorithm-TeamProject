@@ -2,23 +2,26 @@
 
 한국기술교육대학교 운영체제 (process scheduling) 팀프로젝트 
 
+
+## GUI Overview ✅
+<br>
+
+<img src="https://user-images.githubusercontent.com/91319157/209257960-91a665ee-bd8e-4d8b-a0c1-c5e11272ae6c.png">
+
+<br>
+<br>
 <br>
 
 ## Usage 👨🏻‍🔧
-
 
 1. Choice Sceduling algorithm 🤔
 2. ADD Process 🪵
 3. ADD Core 🔥
 4. Run 🚀
 
-
 <br>
 
-
-
 ## 💻 개발 환경 
-
 
 `Back end`
 - `Python`
@@ -178,24 +181,12 @@ waiting_time_quantum만큼 기다리는 Process가 있다면, ready_queue 맨 �
 <br><br>
 
 
-## GUI Overview ✅
-<br>
-
-<img src="https://user-images.githubusercontent.com/91319157/209257960-91a665ee-bd8e-4d8b-a0c1-c5e11272ae6c.png">
-
-
-<br>
-<br>
-<br>
-
-
-
 
 
 
 <br>
 <br>
 
-## 감사합니다 
+## Thank u
 
 <img src="https://user-images.githubusercontent.com/91319157/208434073-c834c893-2aed-4ded-a079-dff65540063f.gif" width="30%"> 
