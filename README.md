@@ -16,6 +16,9 @@ Process Scheduling은 Muti-core Processor로 이루어져, P core와 E core를 �
 
 <br><br>
 
+Basic five scheduling algorithms은 FCFS, 
+
+RR(Time quantum = δ), SPN, SRTN, HRRN으로 구성 돼있다. 
 
 ### Basic five scheduling algorithms
 | Basic scheduling algorithms | Preemptive |  Criteria |
