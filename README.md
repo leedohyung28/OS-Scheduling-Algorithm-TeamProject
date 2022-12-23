@@ -24,6 +24,8 @@
 
 ## 👋🏻 프로젝트 소개 
 
+<br><br><br><br><br>
+
 Process Scheduling Simulator 프로젝트는 Basic five scheduling algorithms과 Your own algorithm을 
 
 구현하여 Process Scheduling을 동작한다.
