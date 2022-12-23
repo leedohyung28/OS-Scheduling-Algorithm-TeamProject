@@ -29,7 +29,10 @@ Process Scheduling은 Muti-core Processor로 이루어져, P core와 E core를 �
 ## 개발 기간 ⏰
 ####
 
-- 2021.05.01 ~ 2021.06.05
+- 2022.03.24 ~ 2022.05.08
+
+<img src="https://user-images.githubusercontent.com/91319157/209250019-99c7ec9e-d074-4230-9ac4-522ef864b760.png">
+
 
 <br><br>
 
