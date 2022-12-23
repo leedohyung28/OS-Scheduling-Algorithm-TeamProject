@@ -118,7 +118,7 @@ Scheduling은 1초 단위로 이루어지고, P core에 할당된 작업의 남�
 
 <br>
 
-## 아이디어 제시 
+## 아이디어 제시 💡
 <br>
 SPN에서 Burst time이 작은 순서대로 작업을 진행하기 때문에 계속해서 Burst Time이 작은 Process가 ready_queue에 들어오게 된다면, 
 
@@ -135,7 +135,7 @@ waiting_time_quantum을 작게 설정한다면 Arrival Time이 우선순위가 �
 
 <br><br>
 
-## 핵심 데이터 구조
+## 핵심 데이터 구조 🦴
 
 - ready_queue_waiting_time (리스트)
 - waiting_time_quantum 
@@ -152,7 +152,7 @@ waiting_time_quantum을 작게 설정한다면 Arrival Time이 우선순위가 �
 
 <br>
 
-### WTQ 구현 방법
+### WTQ 구현 방법 🐶
 
 <br>
 
