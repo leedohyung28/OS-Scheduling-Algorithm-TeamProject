@@ -68,7 +68,7 @@ RR(Time quantum = δ), SPN, SRTN, HRRN으로 구성 돼있다.
 
 <br><br><br>
 
-## input & output
+## input & output 🎤
 <br>
 
 Process Scheduling은 사용자로부터 최대 15개의 Process, 최대 4개의 processor, Arrival time
@@ -103,7 +103,7 @@ Scheduling은 1초 단위로 이루어지고, P core에 할당된 작업의 남�
 
 <br><br>
 
-## 알고리즘 도식화
+## 알고리즘 도식화 🖼
 
 <img src="https://user-images.githubusercontent.com/91319157/209252941-09b42e0e-1670-4466-9752-3c4e98dc467b.png" width="95%">
 
