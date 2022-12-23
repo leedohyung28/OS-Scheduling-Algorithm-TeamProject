@@ -2,6 +2,24 @@
 
 한국기술교육대학교 운영체제 (process scheduling) 팀프로젝트 
 
+## 💻 개발 환경 
+
+`Back end`
+- `Python`
+
+`front end`
+- `python tkinter`
+
+<br><br>
+
+## 개발 기간 ⏰
+####
+
+- 2022.03.24 ~ 2022.05.08
+
+<img src="https://user-images.githubusercontent.com/91319157/209250019-99c7ec9e-d074-4230-9ac4-522ef864b760.png">
+
+
 <br><br>
 
 ## 👋🏻 프로젝트 소개 
@@ -29,29 +47,35 @@ RR(Time quantum = δ), SPN, SRTN, HRRN으로 구성 돼있다.
 | SRTN(Shortest-Remaining-Time-Next) |  0 | Remaining Burst Time |
 | HRRN(High-Response-Ratio-Next) |  X | Response ratio |
 
-<p style="text-align:center">[표01. Basic five scheduling algorithms]</p>
+[표01. Basic five scheduling algorithms]
 
-## 💻 개발 환경 
 
-`Back end`
-- `Python`
+###input & output
 
-`front end`
-- `python tkinter`
+Process Scheduling은 사용자로부터 최대 15개의 Process, 최대 4개의 processor, Arrival time
+
+for each process, Burst time for each process, Time quantum을 입력 받는다. 또 각 scheduling
+
+기법 별로 Gantt chart, WT(Waiting Time) for each process, TT(Turnaround Time) for each 
+
+process, NTT(Normalized Turnaround Time) for each process, 소비전력을 출력한다.
+
+
+### System properties
+| Core   | 성능  |  전력 | 대기 전력 |
+| :---:  | :---: | :---: | :---: |
+| E |  1초에 1의 일을 처리 | 1W | 0.1W |
+| P |  1초에 2의 일을 처리 | 3W | 0.1W |
+
+Scheduling은 1초 단위로 이루어지고, P core에 할당된 작업의 남은 일의 양이 1이어도,
+
+1초를 소모한다고 가정한다.
+
 
 <br><br>
 
-## 개발 기간 ⏰
-####
+## 알고리즘 도식화
 
-- 2022.03.24 ~ 2022.05.08
-
-<img src="https://user-images.githubusercontent.com/91319157/209250019-99c7ec9e-d074-4230-9ac4-522ef864b760.png">
-
-
-<br><br>
-
-## 주요 기능 🏅
 ####
 
 
