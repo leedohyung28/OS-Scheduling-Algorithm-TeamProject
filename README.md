@@ -74,6 +74,10 @@ process, NTT(Normalized Turnaround Time) for each process, 소비전력을 출�
 | :---:  | :---: | :---: | :---: |
 | E |  1초에 1의 일을 처리 | 1W | 0.1W |
 | P |  1초에 2의 일을 처리 | 3W | 0.1W |
+[표02. System properties]
+
+<br>
+<br>
 
 Scheduling은 1초 단위로 이루어지고, P core에 할당된 작업의 남은 일의 양이 1이어도,
 
