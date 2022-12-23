@@ -148,7 +148,7 @@ waiting_time_quantum을 작게 설정한다면 Arrival Time이 우선순위가 �
 
 <img src="https://user-images.githubusercontent.com/91319157/209253296-ac8cb691-937e-42ef-96d3-9b758c9c5667.png" width="50%">
 
-[그림15. ready_queue_waiting_time]
+[그림3. ready_queue_waiting_time]
 
 <br>
 
@@ -162,7 +162,7 @@ waiting_time_quantum을 작게 설정한다면 Arrival Time이 우선순위가 �
 
 <img src="https://user-images.githubusercontent.com/91319157/209253541-a6cfb9dc-09f9-4bdb-92b2-e09b9d23cefb.png">
 
-[도식화06. Flow chart]
+[그림4. Flow chart]
 
 <br>
 
@@ -170,9 +170,9 @@ waiting_time_quantum을 작게 설정한다면 Arrival Time이 우선순위가 �
 
 <br>
 
-<img src="https://user-images.githubusercontent.com/91319157/209254558-c859261f-04e0-4d2a-b043-67dd6d86dd6b.png" width="90%">
+<img src="https://user-images.githubusercontent.com/91319157/209254558-c859261f-04e0-4d2a-b043-67dd6d86dd6b.png" width="50%">
 
-[그림16. WTQ]
+[그림5. WTQ]
 
 <br>
 
