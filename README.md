@@ -6,7 +6,6 @@
 
 ## Usage 👨🏻‍🔧
 
----
 
 1. Choice Sceduling algorithm 🤔
 2. ADD Process 🪵
@@ -20,7 +19,6 @@
 
 ## 💻 개발 환경 
 
----
 
 `Back end`
 - `Python`
@@ -31,7 +29,6 @@
 <br>
 
 ## 개발 기간 ⏰
----
 
 - **2022.03.24 ~ 2022.05.08 ( 총: 46일 )** 
 
@@ -40,7 +37,6 @@
 <br><br>
 
 ## 👋🏻 프로젝트 소개 
----
 <br>
 Process Scheduling Simulator 프로젝트는 Basic five scheduling algorithms과 Your own algorithm을 구현하여 Process Scheduling을 동작한다.
 
@@ -73,7 +69,6 @@ RR(Time quantum = δ), SPN, SRTN, HRRN으로 구성 돼있다.
 <br><br><br>
 
 ## input & output
----
 <br>
 
 Process Scheduling은 사용자로부터 최대 15개의 Process, 최대 4개의 processor, Arrival time
@@ -117,7 +112,6 @@ Scheduling은 1초 단위로 이루어지고, P core에 할당된 작업의 남�
 <br><br><br>
 
 ## WTQ(waiting Time Quantum)_New algorithm
----
 
 <br>
 
@@ -139,7 +133,6 @@ waiting_time_quantum을 작게 설정한다면 Arrival Time이 우선순위가 �
 <br><br>
 
 ## 핵심 데이터 구조
----
 
 - ready_queue_waiting_time (리스트)
 - waiting_time_quantum 
@@ -186,7 +179,6 @@ waiting_time_quantum만큼 기다리는 Process가 있다면, ready_queue 맨 �
 
 
 ## GUI Overview ✅
----
 <br>
 
 <img src="https://user-images.githubusercontent.com/91319157/209257960-91a665ee-bd8e-4d8b-a0c1-c5e11272ae6c.png">
