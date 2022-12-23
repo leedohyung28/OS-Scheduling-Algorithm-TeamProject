@@ -16,6 +16,18 @@ Process Scheduling은 Muti-core Processor로 이루어져, P core와 E core를 �
 
 <br><br>
 
+
+### Basic five scheduling algorithms
+| Basic scheduling algorithms | Preemptive |  Criteria |
+| :---:  | :---: | :---: |
+| FCFS(First-Come-First-Service) |  X | Arrival Time |
+| RR(Round-Robin)  |  O | Arrival Time(Time quantum= δ) |
+| SPN(Shortest-Process-Next)  | X | Burst Time |
+| SRTN(Shortest-Remaining-Time-Next) |  0 | Remaining Burst Time |
+| HRRN(High-Response-Ratio-Next) |  X | Response ratio |
+
+<p style="text-align:center">[표01. Basic five scheduling algorithms]</p>
+
 ## 💻 개발 환경 
 
 `Back end`
