@@ -105,7 +105,7 @@ Scheduling은 1초 단위로 이루어지고, P core에 할당된 작업의 남�
 
 ## 알고리즘 도식화 🖼
 
-<img src="https://user-images.githubusercontent.com/91319157/209252941-09b42e0e-1670-4466-9752-3c4e98dc467b.png" height="65%">
+<img src="https://user-images.githubusercontent.com/91319157/209252941-09b42e0e-1670-4466-9752-3c4e98dc467b.png" height="10%">
 
 [그림02. 알고리즘 도식화]
 
