@@ -8,11 +8,8 @@
 
 |FCFS Test|WTQ Test|
 |---|---|
-|<img src="https://user-images.githubusercontent.com/91319157/213390602-41f04c9c-1cea-4250-8bf3-0470b10afb70.gif">|Test2|
+|<img src="https://user-images.githubusercontent.com/91319157/213390602-41f04c9c-1cea-4250-8bf3-0470b10afb70.gif">|<img src="https://user-images.githubusercontent.com/91319157/213391132-f80b54cd-98ac-4db9-b07b-fd30dc0e2bdd.gif">|
 
-
-
-<img src="https://user-images.githubusercontent.com/91319157/209257960-91a665ee-bd8e-4d8b-a0c1-c5e11272ae6c.png">
 
 <br>
 <br>
