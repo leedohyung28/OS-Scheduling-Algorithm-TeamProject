@@ -8,7 +8,7 @@
 
 |FCFS Test|WTQ Test|
 |---|---|
-|https://user-images.githubusercontent.com/91319157/213390017-483d909f-3737-4e82-8cab-1c6b8baa4566.gif|Test2|
+|<img src="https://user-images.githubusercontent.com/91319157/213390017-483d909f-3737-4e82-8cab-1c6b8baa4566.gif">|Test2|
 
 
 
