@@ -40,6 +40,8 @@
 
 <img src="https://user-images.githubusercontent.com/91319157/209250019-99c7ec9e-d074-4230-9ac4-522ef864b760.png" width="97%">
 
+<프론트 엔드 WBS 내용 수정 필요>
+
 <br><br>
 
 ## 👋🏻 프로젝트 소개 
