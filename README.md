@@ -191,7 +191,3 @@ waiting_time_quantum만큼 기다리는 Process가 있다면, ready_queue 맨 �
 
 <br>
 <br>
-
-## Thank u
-
-<img src="https://user-images.githubusercontent.com/91319157/208434073-c834c893-2aed-4ded-a079-dff65540063f.gif" width="30%"> 
